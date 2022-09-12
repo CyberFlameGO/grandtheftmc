@@ -1,0 +1,27 @@
+name: WastedVehicles
+main: com.j0ach1mmall3.wastedvehicles.Main
+version: 1.0.0
+author: j0ach1mmall3
+description: A Vehicles plugin for GTM
+depend: [JLib, WastedGuns]
+commands:
+  GiveVehicle:
+    description: Gives a vehicle to a player
+    usage: /<command> <identifier> <player>
+  WVReload:
+    description: Reloads the config
+    usage: /<command>
+  FixVehicles:
+permissions:
+  wv.*:
+    description: All the WastedVehicles permissions
+    default: op
+    children:
+      wv.givevehicle: true
+      wv.reload: true
+  wv.givevehicle:
+    description: Access to /givevehicle
+    default: op
+  wv.reload:
+    description: Access to /wvreload
+    default: op

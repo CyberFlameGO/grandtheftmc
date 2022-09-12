@@ -1,0 +1,75 @@
+name: Vice
+version: 1.0
+description: Vice
+author: Presidentx
+main: net.grandtheftmc.vice.Vice
+depend: [Core,ProtocolLib,JLib,WastedGuns,WastedVehicles,EffectLib,Citizens,WorldGuard]
+commands:
+  ammo:
+  lootcrates:
+    aliases: ["lc", "lootc", "lcrates", "lootcrate", "lcrate"]
+  warp:
+  spawn:
+  viceadmin:
+  gameitem:
+    aliases: [gi, gamei, gitem]
+  kit:
+    aliases: [kits]
+  resetstats:
+  shop:
+  vicerank:
+  rankup:
+  drugcheck:
+    aliases: [dc]
+  drugdealer:
+  money:
+    aliases: [bal,balance,eco,economy,cash]
+  pay:
+  tpa:
+  tpahere:
+  tpaccept:
+    aliases: [tpyes]
+  tpdeny:
+    aliases: [tpdeny]
+  bonds:
+  kill:
+  suicide:
+  picker:
+    aliases: [modepicker, armorstandpicker]
+  feed:
+    aliases: [eat,food,saturate]
+  vehicle:
+    aliases: [wv, vehicles, wastedvehicles, wastedvehicle, wvehicle, wvehicles, wastedv]
+  backpack:
+    aliases: [bp, backp, bpack]
+  bribe:
+    aliases: [bail]
+  reset:
+  tokenshop:
+  antiaura:
+  clear:
+    aliases: [clearinventory, cleari, ci, clearinv]
+  fix:
+    aliases: [repair]
+  teleport:
+    aliases: [tp, tpo]
+  spectator:
+    aliases: [gm3staff, spectatormode]
+  backup:
+  lottery:
+  speed:
+  chunkunload:
+  topkillers:
+  stats:
+    aliases: [stat]
+  resourcepack:
+    aliases: [respack, rp, tex, textures, rpack, resourcep, resp, rep, texturepack, texpack, pack, resource]
+  drugs:
+    aliases: [drug]
+  viceranks:
+    aliases: [ranks]
+  stack:
+  cop:
+  rtp:
+    aliases: [randomtp, wild, rteleport, wilderness]
+  area:

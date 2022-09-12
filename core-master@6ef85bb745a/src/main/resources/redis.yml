@@ -1,0 +1,3 @@
+server: 10.0.51.209
+port: 5555
+password: gtmredispass

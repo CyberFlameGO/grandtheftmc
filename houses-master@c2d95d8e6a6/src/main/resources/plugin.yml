@@ -1,0 +1,20 @@
+name: Houses
+version: 1.0
+description: Houses Plugin
+author: Presidentx
+main: net.grandtheftmc.houses.Houses
+softdepend: [WorldEdit]
+depend: [Core,GTM]
+commands:
+  houses:
+    aliases: [h, house]
+  premiumhouses:
+    aliases: [ph, phouse, premh, premhouse, premiumhouse]
+  housedoor:
+    aliases: [hd, hdoor, housesdoor, housesdoors]
+  housechest:
+    aliases: [hc, hchest, houseschest, houseschests]
+  housesign:
+    aliases: [hs, hsign, housessign, housessigns]
+  housetrashcan:
+    aliases: [htc]

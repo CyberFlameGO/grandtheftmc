@@ -1,0 +1,840 @@
+Guns:
+  # PISTOL
+  Pistol:
+    Item: '268 name:&6Pistol_&7«12» itemflag:hide_attributes '
+    MeleeDamage: 3.0
+    AmmoType: PISTOL
+    FireDelay: 7
+    WalkSpeed: 0.2
+    UseSound: ENTITY_FIREWORK_BLAST
+    DropSound: ITEM_ARMOR_EQUIP_LEATHER
+    PickupSound: ITEM_ARMOR_EQUIP_LEATHER
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip4
+    - Grip
+    - Scope
+    # The damage, 2 = 1 heart
+    Damage: 5.0
+    # The accuracy
+    Accuracy: 0.025
+    # Multiplication factor for backwards velocity
+    Recoil: 0.0
+    # The amount of degrees to go up
+    # Speed Potion effect with the following multiplier
+    Zoom: 4
+    # The magazine
+    Magazine: 12
+    # The time in ticks to reload
+    ReloadTime: 40
+    # The range in blocks
+    Range: 25
+    # The Sound when reloading
+    ReloadSound: BLOCK_NOTE_HAT
+    # The particles to display, can be one of (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html)
+    Particles: CRIT
+    # The warmup time in ticks (Not used currently)
+    WarmupTime: 0
+    # Whether we should apply a pumpkin effect as scope
+    PumpkinScope: false
+    # The amount of bullets to shoot at the same time
+    AmmountOfBullets: 1
+    # The amount of entities to pierce with 1 bullet
+    BulletPenetration: 1
+    # The duration in ticks of the Stun Gun effect
+    StunDuration: 0
+    # Whether we should allow shooting during reloading
+    AllowReloadShooting: false
+    # The RPM for Fully Automatic (Set to 0 to disable, can't be < 300, FireDelay needs to be 0)
+    AutomaticRPM: 0
+  StunGun:
+    Item: '269 name:&6Stun_Gun_&7«1» itemflag:hide_attributes'
+    MeleeDamage: 3.0
+    AmmoType: NONE
+    FireDelay: 57
+    WalkSpeed: 0.2
+    UseSound: BLOCK_DISPENSER_DISPENSE
+    DropSound: ITEM_ARMOR_EQUIP_LEATHER
+    PickupSound: ITEM_ARMOR_EQUIP_LEATHER
+    Damage: 1.0
+    Accuracy: 0.0
+    Recoil: 0.0
+    Zoom: 0
+    Magazine: 1
+    ReloadTime: 60
+    Range: 10
+    ReloadSound: BLOCK_NOTE_HAT
+    Particles: MAGIC_CRIT
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 80
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  CombatPistol:
+    Item: '270 name:&6Combat_Pistol_&7«12» itemflag:hide_attributes'
+    MeleeDamage: 3.0
+    AmmoType: PISTOL
+    FireDelay: 7
+    WalkSpeed: 0.2
+    UseSound: ENTITY_FIREWORK_BLAST
+    DropSound: ITEM_ARMOR_EQUIP_LEATHER
+    PickupSound: ITEM_ARMOR_EQUIP_LEATHER
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip4
+    - Grip
+    - Scope
+    Damage: 6.0
+    Accuracy: 0.02
+    Recoil: 0.0
+    Zoom: 3
+    Magazine: 12
+    ReloadTime: 30
+    Range: 30
+    ReloadSound: BLOCK_NOTE_HAT
+    Particles: CRIT
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  HeavyPistol:
+    Item: '271 name:&6Heavy_Pistol_&7«18» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: PISTOL
+    FireDelay: 8
+    WalkSpeed: 0.2
+    UseSound: ENTITY_FIREWORK_BLAST
+    DropSound: ITEM_ARMOR_EQUIP_LEATHER
+    PickupSound: ITEM_ARMOR_EQUIP_LEATHER
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip18
+    - Grip
+    - Scope
+    Damage: 8.0
+    Accuracy: 0.02
+    Recoil: 0.0
+    Zoom: 3
+    Magazine: 18
+    ReloadTime: 40
+    Range: 30
+    ReloadSound: BLOCK_NOTE_HAT
+    Particles: CRIT
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  MarksmanPistol:
+    Item: '290 name:&6Marksman_Pistol_&7«1» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: PISTOL
+    FireDelay: 57
+    WalkSpeed: 0.2
+    UseSound: ENTITY_FIREWORK_BLAST
+    DropSound: ITEM_ARMOR_EQUIP_LEATHER
+    PickupSound: ITEM_ARMOR_EQUIP_LEATHER
+    Damage: 20.0
+    Accuracy: 0.035
+    Recoil: 1.0
+    Zoom: 4
+    Magazine: 1
+    ReloadTime: 100
+    Range: 10
+    ReloadSound: BLOCK_NOTE_HAT
+    Particles: CRIT
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  # SMG
+  MicroSMG:
+    Item: '267 name:&6Micro_SMG_&7«16» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: SMG
+    FireDelay: 0
+    WalkSpeed: 0.2
+    UseSound: ENTITY_BLAZE_HURT
+    DropSound: ITEM_ARMOR_EQUIP_GOLD
+    PickupSound: ITEM_ARMOR_EQUIP_GOLD
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip14
+    - Grip
+    - Scope
+    Damage: 4.0
+    Accuracy: 0.035
+    Recoil: 0.0
+    Zoom: 4
+    Magazine: 16
+    ReloadTime: 40
+    Range: 25
+    ReloadSound: BLOCK_WOODEN_DOOR_OPEN
+    Particles: FLYING_GLYPH
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 600
+  SMG:
+    Item: '256 name:&6SMG_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: SMG
+    FireDelay: 0
+    WalkSpeed: 0.2
+    UseSound: ENTITY_BLAZE_HURT
+    DropSound: ITEM_ARMOR_EQUIP_GOLD
+    PickupSound: ITEM_ARMOR_EQUIP_GOLD
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 4.0
+    Accuracy: 0.025
+    Recoil: 0.0
+    Zoom: 4
+    Magazine: 30
+    ReloadTime: 50
+    Range: 35
+    ReloadSound: BLOCK_WOODEN_DOOR_OPEN
+    Particles: FLYING_GLYPH
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 510
+  AssaultSMG:
+    Item: '257 name:&6Assault_SMG_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: SMG
+    FireDelay: 0
+    WalkSpeed: 0.2
+    UseSound: ENTITY_BLAZE_HURT
+    DropSound: ITEM_ARMOR_EQUIP_GOLD
+    PickupSound: ITEM_ARMOR_EQUIP_GOLD
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 5.0
+    Accuracy: 0.025
+    Recoil: 0.0
+    Zoom: 4
+    Magazine: 30
+    ReloadTime: 50
+    Range: 35
+    ReloadSound: BLOCK_WOODEN_DOOR_OPEN
+    Particles: FLYING_GLYPH
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 460
+  CombatPDW:
+    Item: '258 name:&6Combat_PDW_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: SMG
+    FireDelay: 0
+    WalkSpeed: 0.2
+    UseSound: ENTITY_BLAZE_HURT
+    DropSound: ITEM_ARMOR_EQUIP_GOLD
+    PickupSound: ITEM_ARMOR_EQUIP_GOLD
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 6.0
+    Accuracy: 0.025
+    Recoil: 0.0
+    Zoom: 4
+    Magazine: 30
+    ReloadTime: 40
+    Range: 35
+    ReloadSound: BLOCK_WOODEN_DOOR_OPEN
+    Particles: FLYING_GLYPH
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 450
+  GusenbergSweeper:
+    Item: '292 name:&6Gusenberg_Sweeper_&7«50» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: SMG
+    FireDelay: 0
+    WalkSpeed: 0.2
+    UseSound: ENTITY_BLAZE_HURT
+    DropSound: ITEM_ARMOR_EQUIP_GOLD
+    PickupSound: ITEM_ARMOR_EQUIP_GOLD
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip50
+    - Grip
+    Damage: 6.0
+    Accuracy: 0.016
+    Recoil: 0.0
+    Zoom: 2
+    Magazine: 50
+    ReloadTime: 50
+    Range: 47
+    ReloadSound: BLOCK_WOODEN_DOOR_OPEN
+    Particles: FLYING_GLYPH
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 555
+  # SHOTGUN
+  SawedoffShotgun:
+    Item: '283 name:&6Sawed-off_Shotgun_&7«8» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: SHOTGUN
+    FireDelay: 70
+    WalkSpeed: 0.16
+    UseSound: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    DropSound: ITEM_ARMOR_EQUIP_CHAIN
+    PickupSound: ITEM_ARMOR_EQUIP_CHAIN
+    AllowedAttachments: []
+    Damage: 3.0
+    Accuracy: 0.075
+    Recoil: 1.0
+    Zoom: 6
+    Magazine: 8
+    ReloadTime: 56
+    Range: 15
+    ReloadSound: ENTITY_IRONGOLEM_ATTACK
+    Particles: PARTICLE_SMOKE
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 5
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: true
+    AutomaticRPM: 0
+  PumpShotgun:
+    Item: '284 name:&6Pump_Shotgun_&7«8» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: SHOTGUN
+    FireDelay: 70
+    WalkSpeed: 0.14
+    UseSound: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    DropSound: ITEM_ARMOR_EQUIP_CHAIN
+    PickupSound: ITEM_ARMOR_EQUIP_CHAIN
+    AllowedAttachments: []
+    Damage: 3.0
+    Accuracy: 0.05
+    Recoil: 0.7
+    Zoom: 5
+    Magazine: 8
+    ReloadTime: 56
+    Range: 20
+    ReloadSound: ENTITY_IRONGOLEM_ATTACK
+    Particles: PARTICLE_SMOKE
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 4
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: true
+    AutomaticRPM: 0
+  Musket:
+    Item: '285 name:&6Musket_&7«1» itemflag:hide_attributes'
+    MeleeDamage: 4.0
+    AmmoType: SHOTGUN
+    FireDelay: 92
+    WalkSpeed: 0.14
+    UseSound: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    DropSound: ITEM_ARMOR_EQUIP_CHAIN
+    PickupSound: ITEM_ARMOR_EQUIP_CHAIN
+    AllowedAttachments: []
+    Damage: 30.0
+    Accuracy: 0.025
+    Recoil: 1.0
+    Zoom: 4
+    Magazine: 1
+    ReloadTime: 100
+    Range: 25
+    ReloadSound: ENTITY_IRONGOLEM_ATTACK
+    Particles: PARTICLE_SMOKE
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  AssaultShotgun:
+    Item: '286 name:&6Assault_Shotgun_&7«8» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: SHOTGUN
+    FireDelay: 5
+    WalkSpeed: 0.14
+    UseSound: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    DropSound: ITEM_ARMOR_EQUIP_CHAIN
+    PickupSound: ITEM_ARMOR_EQUIP_CHAIN
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip24
+    - Grip
+    - Scope
+    Damage: 3.0
+    Accuracy: 0.018
+    Recoil: 0.5
+    Zoom: 2
+    Magazine: 8
+    ReloadTime: 40
+    Range: 20
+    ReloadSound: ENTITY_IRONGOLEM_ATTACK
+    Particles: PARTICLE_SMOKE
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 3
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  HeavyShotgun:
+    Item: '294 name:&6Heavy_Shotgun_&7«6» itemflag:hide_attributes'
+    MeleeDamage: 6.0
+    AmmoType: SHOTGUN
+    FireDelay: 6
+    WalkSpeed: 0.12
+    UseSound: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+    DropSound: ITEM_ARMOR_EQUIP_CHAIN
+    PickupSound: ITEM_ARMOR_EQUIP_CHAIN
+    Damage: 5.0
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip6
+    - Grip
+    - Scope
+    Accuracy: 0.022
+    Recoil: 0.6
+    Zoom: 3
+    Magazine: 6
+    ReloadTime: 40
+    Range: 20
+    ReloadSound: ENTITY_IRONGOLEM_ATTACK
+    Particles: PARTICLE_SMOKE
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 3
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  # ASSAULT RIFLE
+  AssaultRifle:
+    Item: '272 name:&6Assault_Rifle_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: ASSAULT_RIFLE
+    FireDelay: 0
+    WalkSpeed: 0.18
+    UseSound: ENTITY_ITEM_BREAK
+    DropSound: ITEM_ARMOR_EQUIP_IRON
+    PickupSound: ITEM_ARMOR_EQUIP_IRON
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 6.0
+    Accuracy: 0.022
+    Recoil: 0.4
+    Zoom: 3
+    Magazine: 30
+    ReloadTime: 40
+    Range: 45
+    ReloadSound: ENTITY_SKELETON_AMBIENT
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 380
+  CarbineRifle:
+    Item: '273 name:&6Carbine_Rifle_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: ASSAULT_RIFLE
+    FireDelay: 0
+    WalkSpeed: 0.18
+    UseSound: ENTITY_ITEM_BREAK
+    DropSound: ITEM_ARMOR_EQUIP_IRON
+    PickupSound: ITEM_ARMOR_EQUIP_IRON
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 7.0
+    Accuracy: 0.018
+    Recoil: 0.4
+    Zoom: 2
+    Magazine: 30
+    ReloadTime: 40
+    Range: 45
+    ReloadSound: ENTITY_SKELETON_AMBIENT
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 445
+  BullpupRifle:
+    Item: '274 name:&6Bullpup_Rifle_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: ASSAULT_RIFLE
+    FireDelay: 0
+    WalkSpeed: 0.18
+    UseSound: ENTITY_ITEM_BREAK
+    DropSound: ITEM_ARMOR_EQUIP_IRON
+    PickupSound: ITEM_ARMOR_EQUIP_IRON
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 7.0
+    Accuracy: 0.016
+    Recoil: 0.3
+    Zoom: 2
+    Magazine: 30
+    ReloadTime: 40
+    Range: 45
+    ReloadSound: ENTITY_SKELETON_AMBIENT
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 500
+  AdvancedRifle:
+    Item: '275 name:&6Advanced_Rifle_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: ASSAULT_RIFLE
+    FireDelay: 0
+    WalkSpeed: 0.18
+    UseSound: ENTITY_ITEM_BREAK
+    DropSound: ITEM_ARMOR_EQUIP_IRON
+    PickupSound: ITEM_ARMOR_EQUIP_IRON
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 8.0
+    Accuracy: 0.02
+    Recoil: 0.2
+    Zoom: 3
+    Magazine: 30
+    ReloadTime: 35
+    Range: 45
+    ReloadSound: ENTITY_SKELETON_AMBIENT
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 500
+  SpecialCarbine:
+    Item: '291 name:&6Special_Carbine_&7«30» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: ASSAULT_RIFLE
+    FireDelay: 0
+    WalkSpeed: 0.18
+    UseSound: ENTITY_ITEM_BREAK
+    DropSound: ITEM_ARMOR_EQUIP_IRON
+    PickupSound: ITEM_ARMOR_EQUIP_IRON
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip30
+    - Grip
+    - Scope
+    Damage: 9.0
+    Accuracy: 0.016
+    Recoil: 0.2
+    Zoom: 2
+    Magazine: 30
+    ReloadTime: 35
+    Range: 45
+    ReloadSound: ENTITY_SKELETON_AMBIENT
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 445
+  # MG
+  MG:
+    Item: '276 name:&6MG_&7«54» itemflag:hide_attributes'
+    MeleeDamage: 6.0
+    AmmoType: MG
+    FireDelay: 0
+    WalkSpeed: 0.14
+    UseSound: BLOCK_NOTE_SNARE
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip46
+    - Grip
+    - Scope
+    Damage: 8.0
+    Accuracy: 0.025
+    Recoil: 0.2
+    Zoom: 3
+    Magazine: 54
+    ReloadTime: 60
+    Range: 60
+    ReloadSound: ENTITY_SKELETON_STEP
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 440
+  CombatMG:
+    Item: '277 name:&6Combat_MG_&7«100» itemflag:hide_attributes'
+    MeleeDamage: 6.0
+    AmmoType: MG
+    FireDelay: 0
+    WalkSpeed: 0.14
+    UseSound: BLOCK_NOTE_SNARE
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Surpressor
+    - ExtendedClip100
+    - Grip
+    - Scope
+    Damage: 9.0
+    Accuracy: 0.02
+    Recoil: 0.1
+    Zoom: 5
+    Magazine: 100
+    ReloadTime: 50
+    Range: 60
+    ReloadSound: ENTITY_SKELETON_STEP
+    Particles: VOID_FOG
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 550
+  # SNIPER
+  SniperRifle:
+    Item: '278 name:&6Sniper_Rifle_&7«10» itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: SNIPER
+    FireDelay: 32
+    WalkSpeed: 0.14
+    UseSound: ENTITY_IRONGOLEM_HURT
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Surpressor
+    - Grip
+    - AdvancedScope
+    Damage: 20.0
+    Accuracy: 0.014
+    Recoil: 0.3
+    Zoom: 8
+    Magazine: 10
+    ReloadTime: 80
+    Range: 95
+    ReloadSound: BLOCK_PISTON_EXTEND
+    Particles: CLOUD
+    WarmupTime: 0
+    PumpkinScope: true
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+  HeavySniper:
+    Item: '279 name:&6Heavy_Sniper_&7«6» itemflag:hide_attributes'
+    MeleeDamage: 6.0
+    AmmoType: SNIPER
+    FireDelay: 41
+    WalkSpeed: 0.14
+    UseSound: ENTITY_IRONGOLEM_HURT
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Surpressor
+    - Grip
+    - AdvancedScope
+    Damage: 30.0
+    Accuracy: 0.011
+    Recoil: 0.3
+    Zoom: 9
+    Magazine: 6
+    ReloadTime: 80
+    Range: 100
+    ReloadSound: BLOCK_PISTON_EXTEND
+    Particles: CLOUD
+    WarmupTime: 0
+    PumpkinScope: true
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+  Minigun:
+    Item: '293 name:&6Minigun_&7«600» itemflag:hide_attributes'
+    MeleeDamage: 8.0
+    AmmoType: MINIGUN
+    FireDelay: 0
+    WalkSpeed: 0.1
+    UseSound: ENTITY_ZOMBIE_ATTACK_IRON_DOOR
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Grip
+    Damage: 10.0
+    Accuracy: 0.025
+    Recoil: 0.1
+    Zoom: 3
+    Magazine: 600
+    ReloadTime: 100
+    Range: 55
+    ReloadSound: ITEM_FLINTANDSTEEL_USE
+    Particles: FLYING_GLYPH
+    WarmupTime: 50
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 1200
+Launchers:
+  RPG:
+    Item: '288 name:&6RPG_&7«1» itemflag:hide_attributes'
+    MeleeDamage: 7.0
+    AmmoType: ROCKET
+    FireDelay: 80
+    WalkSpeed: 0.12
+    UseSound: ENTITY_FIREWORK_LAUNCH
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Grip
+    Damage: 500.0
+    Accuracy: 0.005
+    Recoil: 1.0
+    Zoom: 1
+    Magazine: 1
+    ReloadTime: 60
+    Range: 70
+    ReloadSound: BLOCK_PISTON_CONTRACT
+    Particles: FIREWORKS_SPARK
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+    # The speed of the rocket
+    RocketSpeed: 3.0
+    # The explosion radius size
+    ExplosionSize: 5.0
+    # The explosion strength (for knockback)
+    ExplosionStrength: 2.0
+    # Whether this is a homing launcher
+    Homing: false
+  HomingLauncher:
+    Item: '289 name:&6Homing_Launcher_&7«1» itemflag:hide_attributes'
+    MeleeDamage: 7.0
+    AmmoType: ROCKET
+    FireDelay: 80
+    WalkSpeed: 0.12
+    UseSound: ENTITY_FIREWORK_LAUNCH
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Grip
+    Damage: 500.0
+    Accuracy: 0.005
+    Recoil: 1.0
+    Zoom: 1
+    Magazine: 1
+    ReloadTime: 60
+    Range: 70
+    ReloadSound: BLOCK_PISTON_CONTRACT
+    Particles: FIREWORKS_SPARK
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+    RocketSpeed: 1.0
+    ExplosionSize: 5.0
+    ExplosionStrength: 2.0
+    Homing: true
+ExplosiveLaunchers:
+  GrenadeLauncher:
+    Item: '359 name:&6Grenade_Launcher_&7«6» itemflag:hide_attributes'
+    MeleeDamage: 6.0
+    AmmoType: GRENADE
+    FireDelay: 16
+    WalkSpeed: 0.12
+    UseSound: ENTITY_CHICKEN_EGG
+    DropSound: ITEM_ARMOR_EQUIP_DIAMOND
+    PickupSound: ITEM_ARMOR_EQUIP_DIAMOND
+    AllowedAttachments:
+    - Grip
+    Damage: 500.0
+    Accuracy: 0.005
+    Recoil: 0.5
+    Zoom: 1
+    Magazine: 6
+    ReloadTime: 50
+    Range: 50
+    ReloadSound: BLOCK_PISTON_CONTRACT
+    Particles: FIREWORKS_SPARK
+    WarmupTime: 0
+    PumpkinScope: false
+    AmmountOfBullets: 1
+    BulletPenetration: 1
+    StunDuration: 0
+    AllowReloadShooting: false
+    AutomaticRPM: 0
+    Explosive: Grenade
+DoNotChange: 1.0.0

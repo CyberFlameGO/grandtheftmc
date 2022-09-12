@@ -1,0 +1,18 @@
+'1':
+  permits: 5
+  doors:
+    '1':
+      location: world,0,0,0
+      insideLocation: world,0,0,0
+      outsideLocation: world,0,0,0
+  chests:
+    '1':
+      loc1: world,0,0,0
+    '2':
+      loc1: world,0,0,0
+      loc2: world,0,0,0
+  owner: some-random-uuid-dqsd
+  ownerName: An-Owner
+  guests:
+    some-other-uuid-dqsd: Other_faggot
+    some-faggot-samuri-dqsd: Samuri

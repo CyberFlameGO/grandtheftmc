@@ -1,0 +1,58 @@
+name: Core
+version: 1.0
+main: net.grandtheftmc.core.Core
+depend: [JLib,BuycraftX]
+softdepend: [WorldEdit,Votifier,HolographicDisplays,UltimateCosmetics,LibsDisguises]
+commands:
+  socialspy:
+  config:
+    description: Reload/save the config
+  rank:
+  forumrank:
+  bucks:
+  tokens:
+  whitelist:
+  announcer:
+    aliases: [an, ann, announce]
+  message:
+    aliases: [msg, tell, whisper, m, w]
+  reply:
+    aliases: [r,rep,answer]
+  vote:
+  tutorial:
+    aliases: [tut,t]
+  next:
+  pets:
+  cosmetic:
+    aliases: [cos,cosmetics]
+  nametag:
+  petdata:
+    aliases: [pd, petd, pdata]
+  petname:
+  prefs:
+    aliases: [pref]
+  rewards:
+  ignore:
+    aliases: [ignored]
+  list:
+  clearchat:
+    aliases: [cc, chatclear]
+  globalmute:
+    aliases: [muteall, muteglobal]
+  rules:
+  save:
+  playtime:
+  info:
+    aliases: [how]
+  achievement:
+    aliases: [a]
+  crowbar:
+   aliases: [crowbars]
+  randomvoter:
+  crate:
+  maxplayers:
+  votestreak:
+  chatfilter:
+    aliases: [cf]
+  store:
+  event:

@@ -1,0 +1,5 @@
+deployment:
+  staging:
+    branch: master
+    commands:
+    - sh ./deploy.sh Build-$CIRCLE_BUILD_NUM Build-$CIRCLE_BUILD_NUM "$CIRCLE_PROJECT_REPONAME automated build $CIRCLE_BUILD_NUM" target/$CIRCLE_PROJECT_REPONAME.jar $CIRCLE_PROJECT_REPONAME.jar 4eedfd44a69246519654006ba7fc7d39b731fc69

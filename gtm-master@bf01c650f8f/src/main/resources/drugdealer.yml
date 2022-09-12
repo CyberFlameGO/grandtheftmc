@@ -1,0 +1,57 @@
+drugs:
+  alcohol:
+    min: 10
+    max: 20
+    chance: 50
+    minprice: 100
+    maxprice: 100
+  roofied_chocolate:
+    min: 15
+    max: 45
+    chance: 50
+    minprice: 125
+    maxprice: 320
+  cocaine:
+    min: 5
+    max: 19
+    chance: 50
+    minprice: 400
+    maxprice: 750
+  lsd:
+    min: 13
+    max: 54
+    chance: 50
+    minprice: 250
+    maxprice: 500
+  mdma:
+    min: 1
+    max: 89
+    chance: 50
+    minprice: 75
+    maxprice: 150
+  weed:
+    min: 43
+    max: 910
+    chance: 50
+    minprice: 75
+    maxprice: 150
+  heroin:
+    min: 10
+    max: 23
+    chance: 12
+    minprice: 250
+    maxprice: 500
+  meth:
+    min: 10
+    max: 23
+    chance: 43
+    minprice: 250
+    maxprice: 500
+  "anabolic steroids":
+    min: 3
+    max: 129
+    chance: 100
+    minprice: 500
+    maxprice: 1000
+
+locs:

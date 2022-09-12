@@ -1,0 +1,23 @@
+name: WastedGuns
+main: net.grandtheftmc.guns.GTMGuns
+version: 1.0.0
+author: Teddeh
+description: A Guns plugin for GTM
+depend: [JLib, ProtocolLib]
+commands:
+  WGReload:
+    description: Reload the WastedGuns config
+    usage: /<command>
+permissions:
+  wg.*:
+    description: All the WastedGuns permissions
+    default: op
+    children:
+      wg.giveweapon: true
+      wg.reload: true
+  wg.giveweapon:
+    description: Access to /giveweapon
+    default: op
+  wg.reload:
+    description: Access to /wgreload
+    default: op

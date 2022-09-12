@@ -1,0 +1,76 @@
+name: GTM
+version: 1.0
+description: GTMPlugin
+author: Presidentx
+main: net.grandtheftmc.gtm.GTM
+depend: [Core,ProtocolLib,JLib,WastedGuns,WastedVehicles,BuycraftX]
+commands:
+  ammo:
+  lootcrates:
+    aliases: ["lc", "lootc", "lcrates", "lootcrate", "lcrate"]
+  warp:
+  spawn:
+  gtmadmin:
+  gameitem:
+    aliases: [gi, gamei, gitem]
+  kit:
+    aliases: [kits]
+  shop:
+  gtmrank:
+  rankup:
+  drugcheck:
+    aliases: [dc]
+  drugdealer:
+  gangadmin:
+    aliases: [ga, ganga, gadmin]
+  gangchat:
+    aliases: ["gc", "gangc", "gchat"]
+  money:
+    aliases: [bal,balance,eco,economy,cash]
+  pay:
+  tpa:
+  tpahere:
+  tpaccept:
+    aliases: [tpyes]
+  tpdeny:
+    aliases: [tpdeny]
+  permits:
+  kill:
+  suicide:
+  picker:
+    aliases: [modepicker, armorstandpicker]
+  feed:
+    aliases: [eat,food,saturate]
+  vehicle:
+    aliases: [wv, vehicles, wastedvehicles, wastedvehicle, wvehicle, wvehicles, wastedv]
+  backpack:
+    aliases: [bp, backp, bpack]
+  bribe:
+    aliases: [bail]
+  reset:
+  tokenshop:
+  antiaura:
+  clear:
+    aliases: [clearinventory, cleari, ci, clearinv]
+  fix:
+    aliases: [repair]
+  near:
+  teleport:
+    aliases: [tp, tpo]
+  spectator:
+    aliases: [gm3staff, spectatormode]
+  backup:
+  lottery:
+  speed:
+  chunkunload:
+  topkillers:
+  stats:
+    aliases: [stat]
+  resourcepack:
+    aliases: [respack, rp, texturepack, texpack]
+  drugs:
+    aliases: [drug]
+  gtmranks:
+    aliases: [ranks]
+  stack:
+  event:

@@ -1,0 +1,6 @@
+loot:
+  chicken:
+    chance: 5
+    min: 2
+    max: 5
+lootcrates: {}

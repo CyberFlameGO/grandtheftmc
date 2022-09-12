@@ -1,0 +1,12 @@
+ name: Creative
+ version: 1.0
+ description: Grand Theft Minecart Creative
+ author: Presidentx
+ main: net.grandtheftmc.Creative.Creative
+ depend: [Core]
+ commands:
+   creative:
+     description: Reload the config of Creative
+     usage: /creative <reload>
+   creativerank:
+     aliases: [crank]

@@ -1,0 +1,60 @@
+#sale-menu-name:
+#  menu-title:
+#  subcategories:
+#    subcategoryA:
+#      category-name:
+#      display-item:
+#      subcategories:
+#        subcategoryAa:
+#          category-name:
+#          display-item:
+#          sale-items:
+#            -game-item-name
+#            -game-item-name
+#            -game-item-name
+#        subcategoryAb:
+#          category-name:
+#          display-item:
+#          subcategories:
+#            subcategoryAba:
+#              category-name:
+#              display-item:
+#              sale-items:
+#                -game-item-name
+#                -game-item-name
+#                -game-item-name
+#
+#All subcategories MUST terminate with a sale-items array.
+
+weapons:
+  menu-title: "&a&lWeapons"
+  subcategories:
+    smgs:
+      display-item: 267
+      sale-items:
+      - smg
+      - microsmg
+      - assaultsmg
+      - combatpdw
+    rifles:
+      display-item: 272
+      sale-items:
+      - assaultrifle
+      - carbinerifle
+    pistols:
+      display-item: 268
+      sale-items:
+      - pistol
+      - stungun
+      - combatpistol
+      - heavypistol
+      - marksmanpistol
+    shotguns:
+      display-item: 284
+      sale-items:
+      - sawedoffshotgun
+      - pumpshotgun
+      - assaultshotgun
+      - heavyshotgun
+
+        

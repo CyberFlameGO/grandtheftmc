@@ -1,0 +1,13 @@
+'1':
+  price: 50000
+  doors:
+    '1':
+      location: world,0,0,0
+      insideLocation: world,0,0,0
+      outsideLocation: world,0,0,0
+  chests:
+    '1':
+      loc1: world,0,0,0
+    '2':
+      loc1: world,0,0,0
+      loc2: world,0,0,0

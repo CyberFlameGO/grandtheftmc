@@ -1,0 +1,59 @@
+Airstrikes:
+  Airstrike:
+    Item: '143 name:&aAirstrike itemflag:hide_attributes'
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    BeaconRadius: 3
+    BeaconCircleParticles: 60
+    BeaconLineParticles: 13
+    BeaconUpdateTicks: 5
+    BeaconRotationDegree: 1
+    #temp using ParticleEffect.java
+    BeaconParticle: REDSTONE
+    # The delay before the nuke launches
+    TargetLength: 20
+    # The damage of the Explosive
+    Damage: 50
+    # The explosion radius size
+    ExplosionSize: 5.0
+    # The explosion strength (for knockback)
+    ExplosionStrength: 2.0
+    # The explosion sound
+    ExplosionSound: ENTITY_GENERIC_EXPLODE
+    # The explosion particles
+    ExplosionParticles: EXPLOSION_HUGE
+    BombItemStack: '1 name:&6Grenade itemflag:hide_attributes'
+    HydraItemStack: '153 name:&4&lHydra lore:&7Type:_&a&lPlane'
+    FireDelay: 20
+    UseBeacon: true
+  Nuke:
+    Item: '143 name:&bNuke itemflag:hide_attributes'
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    BeaconRadius: 3
+    BeaconCircleParticles: 60
+    BeaconLineParticles: 13
+    BeaconUpdateTicks: 5
+    BeaconRotationDegree: 1
+    #temp using ParticleEffect.java
+    BeaconParticle: REDSTONE
+    # The delay before the nuke launches
+    TargetLength: 20
+    # The damage of the Explosive
+    Damage: 50
+    # The explosion radius size
+    ExplosionSize: 5.0
+    # The explosion strength (for knockback)
+    ExplosionStrength: 2.0
+    # The explosion sound
+    ExplosionSound: ENTITY_GENERIC_EXPLODE
+    # The explosion particles
+    ExplosionParticles: EXPLOSION_HUGE
+    BombItemStack: '1 name:&6Grenade itemflag:hide_attributes'
+    HydraItemStack: '153 name:&4&lHydra lore:&7Type:_&a&lPlane'
+    FireDelay: 20
+    #set to false because we want to fire immediately
+    UseBeacon: false
+DoNotChange: 1.0.0

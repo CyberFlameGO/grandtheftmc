@@ -1,0 +1,88 @@
+Cops:
+  PoliceMan:
+    Entity: ZOMBIE
+    Health: 5.0
+    WeaponDropChance: 15
+    Name: '&3&lCop'
+    KillReward: 50
+    Weapons:
+    - Pistol
+    - StunGun
+  FBI:
+    Entity: HUSK
+    Health: 10.0
+    WeaponDropChance: 10
+    Name: '&b&lFBI'
+    KillReward: 100
+    Weapons:
+    - MicroSMG
+    - SawedOffShotgun
+    - PumpShotgun
+  SWAT:
+    Entity: PIG_ZOMBIE
+    Health: 15.0
+    WeaponDropChance: 5
+    Name: '&8&lSWAT'
+    KillReward: 250
+    Weapons:
+    - AssaultShotgun
+    - BullpupRifle
+  PoliceDog:
+    Entity: WOLF
+    Health: 5.0
+    WeaponDropChance: 0
+    Name: '&9&lPoliceDog'
+    KillReward: 50
+    Weapons: []
+Groups:
+  1:
+    PoliceDog:
+      Min: 1
+      Max: 1
+    PoliceMan:
+      Min: 0
+      Max: 1
+  2:
+    PoliceDog:
+      Min: 0
+      Max: 1
+    PoliceMan:
+      Min: 1
+      Max: 2
+  3:
+    PoliceDog:
+      Min: 1
+      Max: 2
+    PoliceMan:
+      Min: 1
+      Max: 3
+    FBI:
+      Min: 0
+      Max: 1
+  4:
+    PoliceDog:
+      Min: 1
+      Max: 2
+    PoliceMan:
+      Min: 2
+      Max: 3
+    FBI:
+      Min: 0
+      Max: 2
+    SWAT:
+      Min: 0
+      Max: 1
+  5:
+    PoliceDog:
+      Min: 1
+      Max: 3
+    PoliceMan:
+      Min: 2
+      Max: 5
+    FBI:
+      Min: 2
+      Max: 3
+    SWAT:
+      Min: 1
+      Max: 3
+DoNotChange: 1.0.0

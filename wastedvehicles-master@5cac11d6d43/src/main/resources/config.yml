@@ -1,0 +1,530 @@
+Jetpack:
+  Item: '315 name:&4&lJetpack'
+  Fuel:
+    Enabled: true
+    Item: '263:1 name:&4&lJetpack_Fuel'
+    Interval: 20
+Vehicles:
+  Zentorno:
+    VehicleType: CAR
+    Acceleration: 0.03
+    Deceleration: 0.01
+    RotationSpeed: 8
+    Invisible: true
+    TakeOffSpeed: 0.0
+    Item: '215 name:&4&lZentorno lore:&7Manufacturer:_&a&lPegassi|&7Type:_&a&lSuper'
+    BoundingBoxWidth: 3.0
+    BoundingBoxHeight: 1.8
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 200.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 1
+    SpeedBoosts:
+      Small:
+        Item: '336 name:&a&lSmall_Speed_Boost'
+        SpeedBoost: 1.5
+        Duration: 200
+      Medium:
+        Item: '265 name:&a&lMedium_Speed_Boost'
+        SpeedBoost: 2.0
+        Duration: 400
+      Large:
+        Item: '266 name:&a&lLarge_Speed_Boost'
+        SpeedBoost: 2.5
+        Duration: 600
+    MaxSpeed: 1.5
+    DefaultSpeed: 0.0
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 215
+  Entity_XF:
+    VehicleType: CAR
+    Acceleration: 0.025
+    Deceleration: 0.01
+    RotationSpeed: 7
+    Invisible: true
+    TakeOffSpeed: 0.0
+    Item: '206 name:&4&lEntity_XF lore:&7Manufacturer:_&a&lÖverflöd|&7Type:_&a&lSuper'
+    BoundingBoxWidth: 3.0
+    BoundingBoxHeight: 1.9
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 175.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 1
+    SpeedBoosts:
+      Small:
+        Item: '336 name:&a&lSmall_Speed_Boost'
+        SpeedBoost: 1.5
+        Duration: 200
+      Medium:
+        Item: '265 name:&a&lMedium_Speed_Boost'
+        SpeedBoost: 2.0
+        Duration: 400
+      Large:
+        Item: '266 name:&a&lLarge_Speed_Boost'
+        SpeedBoost: 2.5
+        Duration: 600
+    MaxSpeed: 1.4
+    DefaultSpeed: 0.0
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 206
+  9F:
+    VehicleType: CAR
+    Acceleration: 0.02
+    Deceleration: 0.01
+    RotationSpeed: 6
+    Invisible: true
+    TakeOffSpeed: 0.0
+    Item: '214 name:&4&l9F lore:&7Manufacturer:_&a&lObey|&7Type:_&a&lSports'
+    BoundingBoxWidth: 3.0
+    BoundingBoxHeight: 1.9
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 150.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 1
+    SpeedBoosts:
+      Small:
+        Item: '336 name:&a&lSmall_Speed_Boost'
+        SpeedBoost: 1.5
+        Duration: 200
+      Medium:
+        Item: '265 name:&a&lMedium_Speed_Boost'
+        SpeedBoost: 2.0
+        Duration: 400
+      Large:
+        Item: '266 name:&a&lLarge_Speed_Boost'
+        SpeedBoost: 2.5
+        Duration: 600
+    MaxSpeed: 1.3
+    DefaultSpeed: 0.0
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 214
+  ArmoredKuruma:
+    VehicleType: CAR
+    Acceleration: 0.03
+    Deceleration: 0.01
+    RotationSpeed: 5
+    Invisible: true
+    TakeOffSpeed: 0.0
+    Item: '213 name:&4&lArmored_Kuruma lore:&7Manufacturer:_&a&lKarin|&7Type:_&a&lSports'
+    BoundingBoxWidth: 3.0
+    BoundingBoxHeight: 2.1
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 350.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 1
+    SpeedBoosts:
+      Small:
+        Item: '336 name:&a&lSmall_Speed_Boost'
+        SpeedBoost: 1.5
+        Duration: 200
+      Medium:
+        Item: '265 name:&a&lMedium_Speed_Boost'
+        SpeedBoost: 2.0
+        Duration: 400
+      Large:
+        Item: '266 name:&a&lLarge_Speed_Boost'
+        SpeedBoost: 2.5
+        Duration: 600
+    MaxSpeed: 1.2
+    DefaultSpeed: 0.0
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 213
+  Primo:
+    VehicleType: CAR
+    Acceleration: 0.015
+    Deceleration: 0.01
+    RotationSpeed: 3
+    Invisible: true
+    TakeOffSpeed: 0.0
+    Item: '216 name:&4&lPrimo lore:&7Manufacturer:_&a&lAlbany|&7Type:_&a&lSedan'
+    BoundingBoxWidth: 3.0
+    BoundingBoxHeight: 2.3
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 150.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 1
+    SpeedBoosts:
+      Small:
+        Item: '336 name:&a&lSmall_Speed_Boost'
+        SpeedBoost: 1.5
+        Duration: 200
+      Medium:
+        Item: '265 name:&a&lMedium_Speed_Boost'
+        SpeedBoost: 2.0
+        Duration: 400
+      Large:
+        Item: '266 name:&a&lLarge_Speed_Boost'
+        SpeedBoost: 2.5
+        Duration: 600
+    MaxSpeed: 1.0
+    DefaultSpeed: 0.0
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 216
+  BMX:
+    VehicleType: CAR
+    Acceleration: 0.05
+    Deceleration: 0.01
+    TakeOffSpeed: 0.0
+    RotationSpeed: 11
+    Invisible: false
+    Item: '168 name:&4&lBMX lore:&7Type:_&a&lBicycle'
+    BoundingBoxWidth: 1.0
+    BoundingBoxHeight: 1.0
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 50
+    Explode: false
+    DamageVehicleOnPlayerHit: false
+    KnockOutChance: 50
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 0.75
+    DefaultSpeed: 0
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    - SawedoffShotgun
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 168
+  Rhino:
+    VehicleType: CAR
+    Acceleration: 0.05
+    Deceleration: 0.01
+    TakeOffSpeed: 0.0
+    RotationSpeed: 2
+    Invisible: true
+    Item: '168:1 name:&4&lRhino lore:&7Type:_&a&lTank'
+    BoundingBoxWidth: 4.0
+    BoundingBoxHeight: 3.4
+    LaunchLocationMultiplier: 4.0
+    LaunchLocationYOffset: 2.8
+    MaxHealth: 500.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 0.7
+    DefaultSpeed: 0
+    CollisionDamage: 20.0
+    WastedGunsWeapon: RPG
+    AllowedWeapons: []
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - '168:1'
+  Hydra:
+    VehicleType: PLANE
+    Acceleration: 0.05
+    Deceleration: 0.01
+    TakeOffSpeed: 0.5
+    RotationSpeed: 4.0
+    Invisible: true
+    Item: '153 name:&4&lHydra lore:&7Type:_&a&lPlane'
+    BoundingBoxWidth: 7.0
+    BoundingBoxHeight: 1.6
+    LaunchLocationMultiplier: 6.5
+    LaunchLocationYOffset: -1
+    MaxHealth: 400.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 1.5
+    DefaultSpeed: 0
+    CollisionDamage: 50
+    WastedGunsWeapon: RPG
+    AllowedWeapons: []
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 153
+  Maverick:
+    VehicleType: HELICOPTER
+    Acceleration: 0.0
+    Deceleration: 0.0
+    TakeOffSpeed: 0.0
+    RotationSpeed: 5
+    Invisible: true
+    Item: '200 name:&4&lMaverick lore:&7Type:_&a&lHelicopter'
+    BoundingBoxWidth: 3.2
+    BoundingBoxHeight: 3.2
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 200.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 1.3
+    DefaultSpeed: 1.3
+    CollisionDamage: 15.0
+    WastedGunsWeapon: ''
+    AllowedWeapons: []
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 200
+  AttackMaverick:
+    VehicleType: HELICOPTER
+    Acceleration: 0.0
+    Deceleration: 0.0
+    TakeOffSpeed: 0.0
+    RotationSpeed: 5
+    Invisible: true
+    Item: '121 name:&4&lAttack_Maverick lore:&7Type:_&a&lHelicopter'
+    BoundingBoxWidth: 3.2
+    BoundingBoxHeight: 3.2
+    LaunchLocationMultiplier: 3.0
+    LaunchLocationYOffset: 0.3
+    MaxHealth: 220.0
+    Explode: true
+    DamageVehicleOnPlayerHit: true
+    KnockOutChance: 0
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 1.3
+    DefaultSpeed: 1.3
+    CollisionDamage: 15.0
+    WastedGunsWeapon: Minigun
+    AllowedWeapons: []
+    AllowedBlocks:
+    - STONE
+    - STAINED_CLAY
+    - WOOL
+    - SNOW_BLOCK
+    DisplayBlocks:
+    - 121
+  Dinghy:
+    VehicleType: BOAT
+    Acceleration: 0.05
+    Deceleration: 0.01
+    TakeOffSpeed: 0.0
+    RotationSpeed: 2.0
+    Invisible: false
+    Item: '91 name:&4&lDinghy lore:&7Type:_&a&lBoat'
+    BoundingBoxWidth: 2.0
+    BoundingBoxHeight: 1.4
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 90.0
+    Explode: true
+    DamageVehicleOnPlayerHit: false
+    KnockOutChance: 0
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 1.5
+    DefaultSpeed: 0
+    CollisionDamage: 5.0
+    WastedGunsWeapon: ''
+    AllowedWeapons:
+    - Pistol
+    - StunGun
+    - CombatPistol
+    - HeavyPistol
+    - MarksmanPistol
+    - MicroSMG
+    - SMG
+    - AssaultSMG
+    - CombatPDW
+    - GusenbergSweeper
+    - Grenade
+    - MolotovCocktail
+    - TearGas
+    - StickyBomb
+    - ProximityMine
+    AllowedBlocks:
+    - WATER
+    - STATIONARY_WATER
+    DisplayBlocks:
+    - 91
+  Submarine:
+    VehicleType: SUBMARINE
+    Acceleration: 0.0
+    Deceleration: 0.0
+    TakeOffSpeed: 0.0
+    RotationSpeed: 0.0
+    Invisible: true
+    Item: '56 name:&6Submarine'
+    BoundingBoxWidth: 0.0
+    BoundingBoxHeight: 0.0
+    LaunchLocationMultiplier: 0.0
+    LaunchLocationYOffset: 0.0
+    MaxHealth: 100.0
+    Explode: true
+    DamageVehicleOnPlayerHit: false
+    KnockOutChance: 10
+    Passengers: 0
+    SpeedBoosts: {}
+    MaxSpeed: 0.5
+    DefaultSpeed: 0.5
+    CollisionDamage: 2.0
+    WastedGunsWeapon: ''
+    AllowedWeapons: []
+    AllowedBlocks:
+    - WATER
+    - STATIONARY_WATER
+    DisplayBlocks:
+    - 56
+DoNotChange: 1.0.0

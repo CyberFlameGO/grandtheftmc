@@ -1,0 +1,66 @@
+MeleeWeapons:
+  Rake:
+    # General formatting applies: https://github.com/j0ach1mmall3/JLib/wiki/The-new-Item-Format
+    Item: '280 name:&6Rake itemflag:hide_attributes'
+    # The melee damage 2 = 1 heart (Not specified in spreadsheet)
+    MeleeDamage: 6.0
+    # The AmmoType (Can be MELEE, PISTOL, SMG, MG, ASSAULT_RIFLE, SHOTGUN, SNIPER, ROCKET, GRENADE, MINIGUN)
+    AmmoType: MELEE
+    # The amount of ticks to wait between using
+    FireDelay: 15
+    # The walk speed (default walk speed is 0.2, can be between 0 and 1)
+    WalkSpeed: 0.2
+    # The Sound when shooting
+    UseSound: ENTITY_PLAYER_ATTACK_NODAMAGE
+    # The Sound when dropping
+    DropSound: ITEM_ARMOR_EQUIP_GENERIC
+    # The Sound when picking up
+    PickupSound: ITEM_ARMOR_EQUIP_GENERIC
+    # The Attachment identifiers that are allowed
+    AllowedAttachments: []
+  NightStick:
+    Item: '369 name:&6Night_Stick itemflag:hide_attributes'
+    MeleeDamage: 8.0
+    AmmoType: MELEE
+    FireDelay: 12
+    WalkSpeed: 0.2
+    UseSound: ENTITY_PLAYER_ATTACK_WEAK
+    DropSound: ITEM_ARMOR_EQUIP_GENERIC
+    PickupSound: ITEM_ARMOR_EQUIP_GENERIC
+    AllowedAttachments: []
+  BaseballBat:
+    Item: '417 name:&6Baseball_Bat itemflag:hide_attributes'
+    MeleeDamage: 12.0
+    AmmoType: MELEE
+    FireDelay: 15
+    WalkSpeed: 0.2
+    UseSound: ENTITY_PLAYER_ATTACK_STRONG
+    DropSound: ITEM_ARMOR_EQUIP_GENERIC
+    PickupSound: ITEM_ARMOR_EQUIP_GENERIC
+    AllowedAttachments: []
+  Knife:
+    Item: '418 name:&6Knife itemflag:hide_attributes'
+    MeleeDamage: 15.0
+    AmmoType: MELEE
+    FireDelay: 10
+    WalkSpeed: 0.2
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ITEM_ARMOR_EQUIP_GENERIC
+    PickupSound: ITEM_ARMOR_EQUIP_GENERIC
+    AllowedAttachments: []
+EnergyWeapons:
+  Chainsaw:
+    Item: '419 name:&6Chainsaw itemflag:hide_attributes'
+    MeleeDamage: 5.0
+    AmmoType: ENERGY
+    FireDelay: 5
+    WalkSpeed: 0.14
+    UseSound: ENTITY_WOLF_GROWL
+    DropSound: ITEM_ARMOR_EQUIP_GENERIC
+    PickupSound: ITEM_ARMOR_EQUIP_GENERIC
+    AllowedAttachments: []
+    # The damage to be dealt
+    Damage: 5.0
+    # The radius in which all Living Entities will be damaged
+    Range: 2.0
+DoNotChange: 1.0.0

@@ -1,0 +1,11 @@
+ name: Hub
+ version: 1.0
+ description: Hub
+ author: Presidentx
+ main: net.grandtheftmc.hub.Hub
+ depend: [Core, MapManager]
+ commands:
+   spawn:
+     description: Teleport to the spawn point
+     usage: /spawn
+     default: true

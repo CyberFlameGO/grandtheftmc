@@ -1,0 +1,275 @@
+/*****
+** Table Description:
+** Represents user information.
+**
+** uuid is the uuid of the user
+** name is the name of the user
+** mutex is for mutual exclusion saves
+**
+** Reasoning for structure:
+** PK is `uuid` , as there is a unique one per user.
+** We add an index on name so we can do an efficient query for a name.
+*****/
+CREATE TABLE IF NOT EXISTS user(
+uuid BINARY(16) NOT NULL, 
+name VARCHAR(16) NOT NULL, 
+mutex TINYINT(1) NOT NULL DEFAULT 0, 
+PRIMARY KEY (uuid), 
+INDEX (name)
+);
+
+/*****
+** Table Description:
+** Represents user cooldowns.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** id is the name of the cooldown
+** endTime is the time that the cooldown will end.
+**
+** Reasoning for structure:
+** PK is `uuid` and `id` since one player can have multiple `id`'s
+**
+*****/
+CREATE TABLE IF NOT EXISTS user_cooldown (
+uuid BINARY(16) NOT NULL,
+server_key VARCHAR(10) NOT NULL,
+id VARCHAR(32) NOT NULL,
+endTime TIMESTAMP NOT NULL,
+PRIMARY KEY (uuid, id));
+);
+
+/*****
+** Table Description:
+** Represents user profile information.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** rank is that users rank on the server
+**
+** Reasoning for structure:
+** PK is `uuid, server_key` pair, as there can be a diff
+** rank for a user on a diff server.
+*****/
+CREATE TABLE IF NOT EXISTS user_profile(
+uuid BINARY(16) NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+rank VARCHAR(10) NOT NULL, 
+PRIMARY KEY (uuid, server_key), 
+FOREIGN KEY (uuid) REFERENCES user(uuid) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents user trial rank information.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** rank is that users trial rank on the server
+** creation is when it was created
+** expire_at is when the rank expires
+**
+** Reasoning for structure:
+** PK is `uuid, server_key` pair, as there can be a diff
+** rank for a user on a diff server.
+*****/
+CREATE TABLE IF NOT EXISTS user_trial_rank(
+uuid BINARY(16) NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+rank VARCHAR(10) NOT NULL, 
+creation TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+expire_at TIMESTAMP NOT NULL, 
+PRIMARY KEY (uuid, server_key), 
+FOREIGN KEY (uuid) REFERENCES user(uuid) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents user currency information.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** currency is the id of the currency
+** amount is the amount of the currency
+**
+** Reasoning for structure:
+** PK is `uuid, server_key, currency` tuple, as there can be a diff
+** currency / server / uuid tuple.
+*****/
+CREATE TABLE IF NOT EXISTS user_currency(
+uuid BINARY(16) NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+currency VARCHAR(16) NOT NULL, 
+amount INT NOT NULL, 
+PRIMARY KEY (uuid, server_key, currency), 
+FOREIGN KEY (uuid) REFERENCES user(uuid) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents user tag information.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** tag is the tag that they own
+** enabled is whether its equipped
+**
+** Reasoning for structure:
+** PK is `uuid, server_key, tag` tuple, as there can be a diff
+** tags per server and per user.
+*****/
+CREATE TABLE IF NOT EXISTS user_tag(
+uuid BINARY(16) NOT NULL,
+server_key VARCHAR(10) NOT NULL, 
+tag VARCHAR(16) NOT NULL, 
+enabled TINYINT(1) NOT NULL DEFAULT 0, 
+PRIMARY KEY (uuid, server_key, tag)
+);
+
+/*****
+** Table Description:
+** Represents a log of currency transactions for users.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** currency is the id of the currency
+** amount is the amount of the currency
+** source is where the currency came from
+** reason is optional data of what specifically the source is
+**
+** Reasoning for structure:
+** PK is `id` as it's auto increment.
+*****/
+CREATE TABLE IF NOT EXISTS log_currency_transaction(
+id INT NOT NULL AUTO_INCREMENT, 
+uuid BINARY(16) NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+currency VARCHAR(16) NOT NULL, 
+amount INT NOT NULL, 
+source VARCHAR(20) NOT NULL, 
+reason VARCHAR(40) NOT NULL DEFAULT "", 
+creation TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+PRIMARY KEY (id)
+);
+
+/*****
+** Table Description:
+** Represents user voting logs.
+**
+** uuid is the user that voted
+** amount is the worth of their vote
+** service_id is the service id that they voted on, from VoteSite.java
+** 
+** Reasoning for structure:
+** PK is the `id` field as this table logs all of the votes.
+*****/
+CREATE TABLE IF NOT EXISTS log_user_vote(
+id INT(10) unsigned NOT NULL AUTO_INCREMENT, 
+uuid BINARY(16) NOT NULL, 
+amount INT NOT NULL DEFAULT 1, 
+service_id TINYINT(1) NOT NULL, 
+creation TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+PRIMARY KEY (id)
+);
+
+/*****
+** Table Description:
+** Represents the tags that players have
+**
+** uuid is the user that the specific entry is for
+** server_key is the server that it is for (global or gtm1 / vice1 etc)
+** tag the display tag
+**
+** Reasoning for structure:
+** have different entries for each column so global or server-specific can be specified
+*****/
+CREATE TABLE IF NOT EXISTS user_tag(
+uuid BINARY(16) NOT NULL,
+server_key VARCHAR(10) NOT NULL,
+tag VARCHAR(16) NOT NULL,
+enabled TINYINT(1) NOT NULL DEFAULT 0,
+PRIMARY KEY (uuid, server_key, tag)
+);
+
+/*****
+** Table Description:
+** Represents the different npcs in the world.
+**
+** location is the location of the npc
+** server_key is the server that it is for (global or gtm1 / vice1 etc)
+** reference is the name of the class that the npc represents.
+**
+** Reasoning for structure:
+** have different entries for each column so global or server-specific can be specified
+*****/
+CREATE TABLE IF NOT EXISTS npc_record (
+location VARCHAR(255) NOT NULL,
+reference VARCHAR(100) NOT NULL,
+server_key VARCHAR(10) NOT NULL,
+PRIMARY KEY (location)
+
+/*****
+** Table Description:
+** Represents the weapon skins that players have
+**
+** uuid is the user that the specific entry is for
+** server_key is the server that it is for (global or gtm1 / vice1 etc)
+** weapon_id the int id for the weapon
+** skin_id is the int id for the skin
+**
+** Reasoning for structure:
+** Have different entries for each column so global or server-specific can be specified
+*****/
+CREATE TABLE IF NOT EXISTS user_weapon_skin(
+uuid BINARY(16) NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+weapon_id TINYINT NOT NULL, 
+skin_id TINYINT NOT NULL, 
+enabled TINYINT(1) DEFAULT 0, 
+PRIMARY KEY (uuid, server_key, weapon_id, skin_id)
+);
+
+/*****
+** Table Description:
+** Represents the join info for the player.
+**
+** uuid is the user that the specific entry is for
+** initial_server_address is the ip the user connected to for the network for the first time
+** last_server_address is the ip the user connected to most recently
+** join_date is when the user joined the server
+** last_login is the when the user last logged in
+**
+** Reasoning for structure:
+** Unique key is the uuid of the player, so it's an efficient lookup.
+*****/
+CREATE TABLE IF NOT EXISTS user_join_info(
+uuid BINARY(16) NOT NULL, 
+initial_server_address VARCHAR(30) NOT NULL,
+last_server_address VARCHAR(30) NOT NULL, 
+join_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+last_login TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, 
+PRIMARY KEY (uuid),
+FOREIGN KEY (uuid) REFERENCES user(uuid)
+);
+
+/*****
+** Table Description:
+** Represents user ammo information.
+**
+** uuid is the uuid of the user
+** server_key is the id of the server
+** ammo is the id of the ammo
+** amount is the amount of the currency
+**
+** Reasoning for structure:
+** PK is `uuid, server_key, ammo` tuple, as there can be a diff
+** ammo / server / uuid tuple.
+*****/
+CREATE TABLE IF NOT EXISTS user_ammo(
+uuid BINARY(16) NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+ammo VARCHAR(16) NOT NULL, 
+amount INT NOT NULL, 
+PRIMARY KEY (uuid, server_key, ammo), 
+FOREIGN KEY (uuid) REFERENCES user(uuid) ON DELETE CASCADE
+);

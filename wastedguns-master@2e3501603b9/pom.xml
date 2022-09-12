@@ -1,0 +1,132 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.grandtheftmc</groupId>
+    <artifactId>wastedguns</artifactId>
+    <version>1.1.6</version>
+    <name>WastedGuns</name>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>nexus-release</id>
+            <url>http://nexus.grandtheftmc.net/content/repositories/releases</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-release</id>
+            <name>Internal Releases</name>
+            <url>http://nexus.grandtheftmc.net/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshot</id>
+            <name>Internal Snapshots</name>
+            <url>http://nexus.grandtheftmc.net/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.slikey</groupId>
+            <artifactId>EffectLib</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc.1.12</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.12.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.comphenix.protocol</groupId>
+            <artifactId>ProtocolLib</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.j0ach1mmall3</groupId>
+            <artifactId>JLib</artifactId>
+            <version>1.10.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.grandtheftmc</groupId>
+            <artifactId>wastedvehicles</artifactId>
+            <version>1.0.2.rewrite</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.grandtheftmc</groupId>
+            <artifactId>houses</artifactId>
+            <version>LATEST</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.grandtheftmc</groupId>
+            <artifactId>core</artifactId>
+            <version>2.3.9-mutex</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.3</version>
+                <configuration>
+                    <finalName>WastedGuns</finalName>
+                    <artifactSet>
+                        <includes>
+                            <include>de.slikey:EffectLib</include>
+                            <include>net.grandtheftmc:WastedVehicles</include>
+                        </includes>
+                    </artifactSet>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Nexus deploy -->
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.8</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>default-deploy</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <serverId>nexus</serverId>
+                    <nexusUrl>http://nexus.grandtheftmc.net/</nexusUrl>
+                    <skipStaging>true</skipStaging>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,134 @@
+help:
+  Houses:
+    - "&a&lHouses &fare player-purchasable property."
+    - "&fThere are two types of houses available for players."
+    - "&fPremium houses are bought with permits, type &3/help premiumhouses &ffor more information"
+    - "&fNon-premium houses range from 2-14 chests, whilst premium houses do not have a chest limit"
+    - "&fFind houses in the PvP world by clicking on iron doors"
+    - "&fTo learn more about permits, type &3/help permits &ffor more for additional information"
+  Permits:
+    - "&a&lPermits &fare a nontradeable GTM currency used to buy premium houses"
+    - "&fPermits can be purchased from &2http://store.grandtheftmc.net/ &fand as a voting reward from &2http://grandtheftmc.net/vote"
+    - "&fPermits can be obtained from the tokenshop, type /help tokenshop for additional information"
+    - "&fType &3/help voting &ffor more information"
+  Tokenshop:
+    - "&a&lTokenshop &fgrants players the means to convert tokens into other GTM currencies and/or items"
+    - "&fThe command to open tokenshop is &3/tokenshop"
+    - "&fTo learn about tokens, type &3/help tokens &ffor additional information"
+  Tokens:
+    - "&a&lTokens &fare a nontradeable GTM currency used for a variety of purposes"
+    - "&fSpend tokens using &3/tokenshop"
+    - "&fTokens are a voting reward from &2http://grandtheftmc.net/vote &fand can purchased from &2http://store.grandtheftmc.net/"
+    - "&fType &3/help voting &ffor more information"
+    - "&fTokens can be used for cosmetic player auras, hats, and pets, do &3/help c &ffor more information"
+  Money:
+    - "&a&lMoney &fis stored in either the player's hand or bank, type &3/help hand &for &3/help bank2 for more information"
+    - "&fMoney is obtained by killing players or selling loot in trashcans, type &3/help trashcans &ffor more information"
+    - "&fMoney can be purchased from &2http://store.grandtheftmc.net/ &fand as a voting reward from &2http://grandtheftmc.net/vote"
+    - "&fType &3/help voting &ffor more information"
+    - "&fMoney can be used to buy guns at Ammunation, type &3/help Ammunation"
+    - "&fMoney can be used to buy food from food vendors, type &3/help Food &ffor more information"
+    - "&fMoney can be used to buy armor from Bincos, type &3/help Bincos &ffor more information"
+    - "&fUse the bank to transfer money from hand to bank, type &3/help bank2 &ffor more information"
+  Armor:
+    - "&a&lArmor &fprovides players a damage reduction from bullets, explosives, and melee attacks"
+    - "&fCertain armors in cases allow players to fly, type &3/help jetpacks &for &3/help wingsuits for more information"
+    - "&fArmor is bought from Bincos, type &3/help Bincos &ffor more information"
+    - "&fArmor in equippable in the armor slots of a player, opened by pressing e"
+    - "&fCertain armors can be obtained as a voting reward from &2http://grandtheftmc.net/vote"
+  Wingsuits:
+    - "&a&lWingsuits &fare chestplate armor worn that enable the player to fly"
+    - "&fWingsuits require fuel to operate, type &3/help fuel &ffor more information"
+    - "&fTo fly with a wingsuit, crouch and look up from an angled position, then press space repeatedly to take off"
+    - "&fWingsuits do not provide players with armor points, but function similarly to elytra flight, with the ability of lift"
+    - "&fIf more advanced help is needed for wingsuits, consult a staff member for additional information"
+    - "&fWingsuits obtainable as a premium rank reward, type &3/help premiumrank for additional information"
+    - "&fWingsuits are armor variants, type &3/help armor &ffor additional help"
+  Jetpacks:
+    - "&a&1Jetpacks &fare chestplate armor worn that enable the player to fly"
+    - "&fJetpacks require fuel to operate, type &3/help fuel &ffor more information"
+    - "&fJetpacks provide armor points, and function similarly to creativefly"
+    - "&fJetpacks are armor variants, type &3/help armor &ffor additional help"
+    - "&fJetpacks are purchasable from Bincos, type &3/help bincos &ffor additional information"
+    - "&fJetpacks are obtainable as a premium rank reward, type &3/help premiumrank &ffor additional information"
+  Fuel:
+    - "&a&1Fuel &fis purchasable from Bincos as a consumable item for jetpacks and wingsuits, type /help bincos for more help"
+    - "&fType &3/help wingsuits &for &3/help jetpacks &ffor additional information"
+  Bincos:
+    - "&a&1Bincos &fis an armor vendor that distributes armor for money, type &3/help armor &for &3/help money &ffor more information"
+    - "&fBincos is located in /spawn, for additional help type /help spawn"
+    - "&fBincos in addition sells jetpacks and fuel, for additional information type /help jetpacks or /help fuel"
+    - "&fGoods bought from the vendor must be paid with cash from hand, type /help hand for more help"
+  Spawn:
+    - "&a&1Spawn is the initial playerzone that is separate from the PvP world"
+    - "&fSpawn contains Bincos, Carshop, and Ammunation, type &3/help bincos, &3/help carshop, &3/help ammunation &ffor more information"
+    - "&fSpawn provides the standings for the lottery and the bank,type &3/help lottery &fand &3/help bank for more information"
+    - "&fSpawn is accessible through the command &2/spawn"
+  Bank:
+    - "&fThe &a&1bank &fis a building found in &3/spawn, &ftype &3/spawn &ffor more information"
+    - "&fPlayers here can store money from their hand to their bank, type &3/help hand or &3/help bank &ffor more information"
+    - "&fClicking itemframes with itemnames of ATM prompts the bank menu"
+    - "&fThe bank deals with the player currency of money, type &3/help money &ffor more information"
+  Carshop:
+    - "&a&1Carshop is an area found in /spawn, type /help spawn for more information"
+    - "&fPlayers spend money to purchase cars, helicopters, tanks, boats, and jets, type &3/help cars &ffor more information"
+    - "&fFor help on money, type &3/help money &ffor more information"
+    - "&fRepair costs for cars are 20% of their original price, once a player owns a vehicle it is owned until sold"
+  Cars:
+    - "&a&1Cars &fcan be purchased from the carshop, &3type /help carshop &ffor more information"
+    - "&fnce a car is destroyed, it can be repaired at the carshop"
+    - "&fGang members can enter the passenger seat of a car to transport multiple people at once"
+    - "&fCertain weapons can be used inside of cars, and sometimes cars are equipped with preset weapons"
+  Trashcans:
+    - "&a&1Trashcans &fare found in the PvP world, as well as in spawn, type &3/help spawn &ffor additional information"
+    - "&fTrashcans are dispensers with a custom UI that allows players to sell items for 50% of their valued price in stores"
+    - "&3/help Bincos &fand &3/help Ammunation, &ffor additional help for item vendors"
+    - "M&foney is granted to the hand, type &3/help hand vor &3/help money &ffor additional information"
+  Premiumranks:
+    - "&a&1Premium ranks are special ranks purchased here, &2http://grandtheftmc.net/vote &fand &2http://store.grandtheftmc.net/"
+    - "&fAll perks earned through premium ranks can be obtained through the basic rank system, type &3/help ranks &ffor more information"
+    - "&fPremium ranks give the player money and tokens, type &3/help money &for &3/help tokens &ffor more information"
+    - "&fPremium ranks give the ability to tpa and tpahere, type &3/help tpa &ffor more information"
+    - "&fPremium rank trials can be bought in tokenshop, type &3/help tokenshop &ffor more information"
+  C:
+    - "&a&1/c &fis a command that prompts a UI screen to manage, buy, and toggle cosmetics"
+    - "&fCosmetics are purchased with tokens, type &3/help tokenshop &ffor more information"
+  Ranks:
+    - "&a&1Ranks &fare obtained though the &2/rankup &fcommand"
+    - "&fMoney for &2/rankups &fmust be in the hand, type &3/help money &ffor more information"
+    - "&fRanking up allows players to access new weapons and armors, type &3/help armor &ffor more information"
+  Tpa:
+    - "&a&1Tpa is a command usable by premium rank players, use &3/help premiumranks &ffor more information"
+    - "&fTpa sends a teleport request to the player specified after the command, &2/tpa playername"
+    - "&fTpahere sends a teleport request for the player specified to teleport to you, &2/tpahere playername"
+    - "&fTpa commands can be accepted using &2/tpaccept &for &2/tpadeny"
+    - "&fPlayers combat tagged cannot accept or send teleport requests"
+  Hand:
+    - "&a&1Money &fin the hand can be transferred to the bank using the phone"
+    - "&ftype &3/help phone, /help bank, &for &3/help money &for more information"
+    - "&fUpon death, 50% of money in the hand will be dropped at the deathpoint"
+  Bank2:
+    - "&a&1The money in the bank can be transferred to the hand, type &3/help money &for &3/help hand &ffor more information"
+    - "&fUpon death, no money in the bank will be dropped at the deathpoint"
+    - "&fBank money can be transferred using the phone or ATMs, type &3/help bank &for &3/help phone for more information"
+  Food:
+    - "&a&1Food can be purchased from spawn using money, type &3/help spawn &for &3/help money &ffor additional information"
+    - "&fFood is sold in item vendors around the spawn map and throughout the PVP world"
+  Ammunation:
+    - "&a&1Ammunation &fis an item vendor that sells weapons and consumables for money, type &3/help money &ffor more information"
+    - "&fAmmunation is only found in spawn, type &3/help spawn &ffor more information"
+    - "&fTrashcans are located in ammunation and allow to sell weapons, type &3/help trashcans &ffor more information"
+  Voting:
+    - "&a&1Voting &fallows for the player to receive tokens, money, tokens, and rare items"
+    - "&fVote at &2http://grandtheftmc.net/vote"
+  Lottery:
+    - "&fThe &a&1lottery &fallows players to gamble money in a cumulative pot, at a chance to win shares of the pot"
+    - "&fMoney gambled gives players tickets for the weekly drawing, type &3/help tickets &for &3/help money &ffor more information"
+    - "&fMoney spent is nonrefundable, tickets bought are final"
+  Tickets:
+    - "&a&1Tickets &fare purchased for the lottery using money, type &3/help lottery &for &3/help money &ffor more information"
+    - "&fTickets are a currency that cannot be traded, and are used in the weekly lottery drawing"
+  About:
+    - "&a&1/help &fcommands were created by &9&1Presidentx, &4&1Cruee, and &dHqs"
+    - "&fThis project has taken around 8 hours to successfully compile"
+    - "&fAny suggestions for additions? Feel free to message us"

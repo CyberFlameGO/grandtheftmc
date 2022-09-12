@@ -1,0 +1,112 @@
+Explosives:
+  Grenade:
+    Item: '402 name:&6Grenade itemflag:hide_attributes'
+    MeleeDamage: 0.0
+    AmmoType: EXPLOSIVE
+    FireDelay: 30
+    WalkSpeed: 0.2
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    AllowedAttachments: []
+    # The delay before this Explosive will explode
+    ExplosionDelay: 60
+    # The damage of the Explosive
+    Damage: 50
+    # The explosion radius size
+    ExplosionSize: 5.0
+    # The explosion strength (for knockback)
+    ExplosionStrength: 2.0
+    # The explosion sound
+    ExplosionSound: ENTITY_GENERIC_EXPLODE
+    # The explosion particles
+    ExplosionParticles: EXPLOSION_HUGE
+    # The duration of the TearGas effect, only enable if this is a TearGas explosive
+    TearGasDuration: 0
+    # The duration of the player burn, only enable if this is a MolotovCocktail explosive
+    BurnDuration: 0
+    # Whether this explosive should stick, only enable if this is a StickyBomb explosive
+    Sticky: false
+    # Whether this explosive activates upon proximity, only enable if this is a ProximityMine explosive
+    Proximity: false
+  TearGas:
+    Item: '370 name:&6Tear_Gas itemflag:hide_attributes'
+    MeleeDamage: 0.0
+    AmmoType: EXPLOSIVE
+    FireDelay: 30
+    WalkSpeed: 0.2
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    AllowedAttachments: []
+    ExplosionDelay: 60
+    Damage: 5
+    ExplosionSize: 5.0
+    ExplosionStrength: 0.0
+    ExplosionSound: BLOCK_LAVA_EXTINGUISH
+    ExplosionParticles: CLOUD
+    TearGasDuration: 100
+    BurnDuration: 0
+    Sticky: false
+    Proximity: false
+  MolotovCocktail:
+    Item: '378 name:&6Molotov_Cocktail itemflag:hide_attributes'
+    MeleeDamage: 0.0
+    AmmoType: EXPLOSIVE
+    FireDelay: 30
+    WalkSpeed: 0.2
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    AllowedAttachments: []
+    ExplosionDelay: 60
+    Damage: 25
+    ExplosionSize: 5.0
+    ExplosionStrength: 0.0
+    ExplosionSound: ENTITY_SPLASH_POTION_BREAK
+    ExplosionParticles: FLAME
+    TearGasDuration: 0
+    BurnDuration: 100
+    Sticky: false
+    Proximity: false
+  StickyBomb:
+    Item: '385 name:&6Sticky_Bomb itemflag:hide_attributes'
+    MeleeDamage: 0.0
+    AmmoType: EXPLOSIVE
+    FireDelay: 20
+    WalkSpeed: 0.2
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    AllowedAttachments: []
+    ExplosionDelay: 0
+    Damage: 50
+    ExplosionSize: 5.0
+    ExplosionStrength: 2.0
+    ExplosionSound: ENTITY_GENERIC_EXPLODE
+    ExplosionParticles: EXPLOSION_HUGE
+    TearGasDuration: 0
+    BurnDuration: 0
+    Sticky: true
+    Proximity: false
+  ProximityMine:
+    Item: '348 name:&6Proximity_Mine itemflag:hide_attributes'
+    MeleeDamage: 0.0
+    AmmoType: EXPLOSIVE
+    FireDelay: 20
+    WalkSpeed: 0.2
+    UseSound: ENTITY_SKELETON_SHOOT
+    DropSound: ENTITY_BAT_TAKEOFF
+    PickupSound: ENTITY_BAT_TAKEOFF
+    AllowedAttachments: []
+    ExplosionDelay: 0
+    Damage: 50
+    ExplosionSize: 5.0
+    ExplosionStrength: 2.0
+    ExplosionSound: ENTITY_GENERIC_EXPLODE
+    ExplosionParticles: EXPLOSION_HUGE
+    TearGasDuration: 0
+    BurnDuration: 0
+    Sticky: false
+    Proximity: true
+DoNotChange: 1.0.0

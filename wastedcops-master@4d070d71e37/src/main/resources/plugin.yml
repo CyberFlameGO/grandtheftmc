@@ -1,0 +1,19 @@
+name: WastedCops
+main: com.j0ach1mmall3.wastedcops.Main
+version: 1.0.0
+author: j0ach1mmall3
+description: A Cops plugin for GTM
+depend: [JLib, WastedGuns]
+commands:
+  WCReload:
+    description: Reloads the config
+    usage: /<command>
+permissions:
+  wc.*:
+    description: All the WastedCops permissions
+    default: op
+    children:
+      wc.reload: true
+  wc.reload:
+    description: Access to /wcreload
+    default: op

@@ -1,0 +1,10 @@
+ranks:
+    default:
+    - test
+    - some.perm
+    - -denied.perm
+    vip:
+    - a.vip.perm
+players:
+    qfqsdfjkqdsfjhjsfqd:
+    - some.random.perm.for.only.this.fgt

@@ -1,0 +1,13 @@
+hobo:
+    delay: 300
+    items:
+      - chicken
+      - beef,pork
+kak:
+    cost: 50
+    delay: 300
+    items:
+      - chicken
+      - beef:40,pork:50
+vip:
+    delay: 86400

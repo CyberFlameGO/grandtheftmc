@@ -1,0 +1,211 @@
+/*****
+** Table Description:
+** Represents GTM gang information.
+**
+** id is primary auto increment so we can change gang names.
+** server_key is the server that this gang is on
+** name is the name of the server
+** owner is the uuid of the player that owns this gang
+** 
+** Reasoning for structure:
+** PK is the (`id`) field, as every gang needs its own unique key. We
+** index the server_key so we can lookup gangs by server_type.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_gang(
+id INT NOT NULL AUTO_INCREMENT, 
+server_key VARCHAR(10) NOT NULL, 
+name VARCHAR(36) NOT NULL, 
+owner BINARY(16) NOT NULL, 
+description VARCHAR(255) NOT NULL, 
+max_members INT(11) NOT NULL, 
+PRIMARY KEY (id), 
+INDEX (server_key), 
+INDEX (name)
+);
+
+/*****
+** Table Description:
+** Represents GTM gang member information, every gang will 
+** have multiple records, one for each member.
+**
+** gang_id is foreign key reference to gtm_gang table
+** uuid is the uuid of the member
+** 
+** Reasoning for structure:
+** PK is the (`gang_id`, `uuid`) pair, as a member can only exist in that gang once.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_gang_member(
+gang_id INT NOT NULL, 
+uuid BINARY(16) NOT NULL, 
+role SMALLINT(6) DEFAULT 1, 
+PRIMARY KEY (gang_id, uuid), 
+FOREIGN KEY (gang_id) REFERENCES gtm_gang(id) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents GTM gang relationships.
+**
+** gang_id is owner of the relationship
+** other_id is the other gang in this relationship
+** relation is the relationship they share
+** 
+** Reasoning for structure:
+** PK is the (`gang_id`, `other_id`) pair, as a gang can only have
+** ONE unique relationship between them.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_gang_relation(
+gang_id INT NOT NULL, 
+other_id INT NOT NULL, 
+relation VARCHAR(10), 
+PRIMARY KEY (gang_id, other_id), 
+FOREIGN KEY (gang_id) REFERENCES gtm_gang(id) ON DELETE CASCADE, 
+FOREIGN KEY (other_id) REFERENCES gtm_gang(id) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents basic information about a GTM house.
+**
+** id is determined by SQL, unique foreign key in other tables
+** house_num is the id number of the house
+** server_key is the server key that this is for
+** premium is whether this is a premium house
+** currency is the type of currency to use to buy this house
+** price is the price of the currency for the purchase
+**
+** Reasoning for structure:
+** PK is the auto increment field, as it has to be, but we have a 
+** unique constraint on the (house_num, server_key, premium) composite
+** key as we want that to be unique lookup.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_house (
+id INT NOT NULL AUTO_INCREMENT, 
+house_num INT NOT NULL, 
+server_key VARCHAR(10) NOT NULL, 
+premium TINYINT(1) NOT NULL DEFAULT 0, 
+currency VARCHAR(10) NOT NULL, 
+price INT NOT NULL, 
+PRIMARY KEY (id), 
+UNIQUE INDEX (house_num, server_key, premium)
+);
+
+/*****
+** Table Description:
+** Represents GTM house locations (chests, doors, signs).
+**
+** house_id is the foreign key reference to the gtm_house table
+** hotspot_id is the unique id for the given data, removing attributes if needed.
+** hotspot_type is the type of data this is
+** data is the blob of JSON data for this hotspot
+**
+** Reasoning for structure:
+** PK is the auto increment field, as it has to be, but we have an index
+** on the house_id column for efficient lookups.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_house_data (
+house_id INT NOT NULL, 
+hotspot_id INT NOT NULL AUTO_INCREMENT, 
+hotspot_type VARCHAR(5) NOT NULL, 
+data BLOB DEFAULT NULL, 
+PRIMARY KEY (hotspot_id), 
+INDEX (house_id), 
+FOREIGN KEY (house_id) REFERENCES gtm_house(id) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents GTM house user data.
+**
+** house_id is the foreign key reference to the gtm_house table
+** uuid is the uuid of the user
+** owner is whether the user is the owner of the house
+**
+** Reasoning for structure:
+** PK is the (`house_id`, `uuid`) pair, as we need an efficient lookup on house_id.
+** We add an index on uuid so we can get all houses a player is in.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_house_user (
+house_id INT NOT NULL, 
+uuid BINARY(16) NOT NULL, 
+is_owner TINYINT(1) NOT NULL, 
+PRIMARY KEY (house_id, uuid), 
+INDEX(uuid), 
+FOREIGN KEY (house_id) REFERENCES gtm_house(id) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents GTM house user chest data.
+**
+** house_id is the foreign key reference to the gtm_house table
+** uuid is the uuid of the user that owns this chest
+** chest_id is the id of the chest
+** content is the chest contents
+**
+** Reasoning for structure:
+** PK is the (`house_id`, `uuid`) pair, as we need an efficient lookup on house_id.
+** We add an index on uuid so we can get all chests for a player.
+*****/
+CREATE TABLE IF NOT EXISTS gtm_house_chest (
+house_id INT NOT NULL, 
+uuid BINARY(16) NOT NULL, 
+chest_id INT NOT NULL, 
+content LONGBLOB DEFAULT NULL, 
+PRIMARY KEY (house_id, uuid, chest_id),
+INDEX (uuid), 
+FOREIGN KEY (house_id) REFERENCES gtm_house(id) ON DELETE CASCADE, 
+FOREIGN KEY (house_id, uuid) REFERENCES gtm_house_user(house_id, uuid) ON DELETE CASCADE
+);
+
+/*****
+** Table Description:
+** Represents event information, like halloween or something.
+**
+** event_type is the type of event
+** data is the JSON object data for this event
+** start/end time is when to start or end the event
+** 
+** Reasoning for structure:
+** PK is the `server_key` field, as it's a key lookup for each
+** server.
+*****/
+CREATE TABLE IF NOT EXISTS event(
+server_key VARCHAR(40) NOT NULL, 
+event_type VARCHAR(40) NOT NULL, 
+data TEXT NOT NULL, 
+start_time TIMESTAMP NOT NULL, 
+end_time TIMESTAMP NOT NULL, 
+PRIMARY KEY (server_key)
+);
+
+/*****
+** Table Description:
+** Represents halloween specific event information. Specifically,
+** so that players cannot redeem multiple houses.
+**
+** uuid is the uuid of the user
+** house_id is the premium house id that was interacted with
+** 
+** Reasoning for structure:
+** Index is the `uuid` field, so we can efficiently get a list
+** of already redeemed houses for a user.
+*****/
+CREATE TABLE IF NOT EXISTS event_halloween(
+uuid BINARY(16) NOT NULL, 
+house_id INT NOT NULL, 
+creation TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+INDEX (uuid)
+);
+
+
+/*****
+** Add mutex columns to general tables
+*****/
+ALTER TABLE gtm0 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;
+ALTER TABLE gtm1 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;
+ALTER TABLE gtm2 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;
+ALTER TABLE gtm3 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;
+ALTER TABLE gtm4 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;
+ALTER TABLE gtm5 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;
+ALTER TABLE gtm6 ADD COLUMN mutex TINYINT(1) NOT NULL DEFAULT 0 AFTER name;

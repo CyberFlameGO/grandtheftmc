@@ -1,0 +1,4 @@
+name: Bungee
+main: net.grandtheftmc.Bungee.Bungee
+version: 1.3
+author: GTMDevs

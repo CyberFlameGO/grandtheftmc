@@ -1,0 +1,36 @@
+links:
+  minecraftservers.org:
+    name: Minecraftservers.org
+    link: http://minecraftservers.org/vote/102886
+  mcsl:
+    name: Minecraft-Server-List.com
+    link: http://minecraft-server-list.com/server/210232/vote/
+  mc-index:
+    name: MC-Index
+    link: http://www.minecraft-index.com/12351-grandtheftminecart-8211-gta-in-minecraft/vote
+  topg.org:
+    name: TopG.org
+    link: http://topg.org/Minecraft/in-365133
+  minestatus:
+    name: Minestatus
+    link: https://minestatus.net/76320-grandtheftminecart-gta-in-minecraft/vote
+  mcserverlist.com:
+    name: MCServerList.com
+    link: http://mc-serverlist.com/vote.php?id=3729
+  mclistserv:
+    name: MCListServ
+    link: http://mclistserv.com/server/2054
+  mcserverstatus:
+    name: MCServerStatus
+    link: https://mcserverstatus.com/vote/17821
+  minecraft-mp.com:
+    name: Minecraft-MP
+    link: http://minecraft-mp.com/server/14659/vote/
+  mineservers.com:
+    name: MineServers
+    link: https://mineservers.com/server/W6e3OH60/vote
+rewards:
+  tokens:
+    type: TOKENS
+    chance: GUARANTEED
+    amount: 1

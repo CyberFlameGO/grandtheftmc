@@ -1,0 +1,6 @@
+CrackBlocksWhenHit: true
+BlockParticlesWhenHit: true
+FakeExplosionDebris: true
+FakeExplosionDebrisParticles: true
+BloodParticlesOnHit: true
+DoNotChange: 1.0.0

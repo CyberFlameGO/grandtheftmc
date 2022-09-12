@@ -1,0 +1,171 @@
+Attachments:
+  Surpressor:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound: BLOCK_LAVA_POP
+    DamageFactor: 0.95
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 0
+    ReloadTimeFactor: 1.0
+    RangeFactor: 0.9
+    PumpkinScope: false
+  ExtendedClip4:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 4
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip6:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 6
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip14:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 14
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip18:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 18
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip24:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 24
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip30:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 30
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip46:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 46
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip50:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 50
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  ExtendedClip100:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 1.0
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 100
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  Grip:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 0.9
+    RecoilFactor: 0.8
+    ZoomFactor: 1.0
+    MagazineAmount: 0
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+  Scope:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 0.8
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 0
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: true
+  AdvancedScope:
+    MeleeDamageFactor: 1.0
+    FireDelayFactor: 1.0
+    WalkSpeedFactor: 1.0
+    UseSound:
+    DamageFactor: 1.0
+    AccuracyFactor: 0.8
+    RecoilFactor: 1.0
+    ZoomFactor: 1.0
+    MagazineAmount: 0
+    ReloadTimeFactor: 1.0
+    RangeFactor: 1.0
+    PumpkinScope: false
+DoNotChange: 1.0.0
